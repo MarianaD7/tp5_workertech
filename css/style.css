@@ -70,9 +70,41 @@
     font-family: 'Ysabeau Infant', sans-serif;
 }
 /*footer*/
-
+.pie{
+    margin-top: 5rem;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-center;
+    gap: 20rem;
+    align-items: center;
+}
+.redes{
+    margin-top: 5rem;
+    color: white;
+    display: flex;
+    flex-wrap:  wrap;
+    gap: 5rem;
+}
+.redes h2, .redes a{
+    transition: all 0.2s;
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
+}
+.redes h2:hover, .redes a:hover{
+    transform: scale(1.1);
+}
+.img_footer{
+   width: 100%;
+}
+.img_footer img{
+    width: 100%;
+}
 /*PAGS*/
 /*index*/
+/*nav*/
 .body_index{
     background: black;
 }
@@ -82,6 +114,7 @@
 .nav_index ul li a{
     color: darkred;
 }
+/*main*/
 .bienvenida{
     background-color: black;
     color: darkred;
@@ -158,6 +191,15 @@
 .instrucciones h3{
     text-align: center;
 }
+/*footer*/
+.pie_index{
+    background-image: linear-gradient(to top, darkred 0%, black 100%);
+}
+
+.redes_index h2:hover, .redes_index a:hover{
+    color: darkred;
+}
+
 /*RAZAS*/
 
 /*nav*/
@@ -169,7 +211,7 @@
 }
 /*main*/
 .body_razas{
-    background: #3c3f40 ;
+    background-image: linear-gradient(to top, #1a1b12 0%, #3c3f40 100%) ;
 }
 .cuerpo_razas{
    background-image: linear-gradient(to top, #1a1b12 0%, #3c3f40 100%);
@@ -230,8 +272,17 @@
 .img_humano{
     width: 420px;
 }
-
-
+/*footer*/
+.pie_razas{
+    background-image: linear-gradient(to top, rgb(114, 97, 0) 0%, #1a1b12 100%);
+    margin-top: 0;
+}
+.redes_razas{
+    margin-top: 119px;
+}
+.redes_razas h2:hover, .redes_razas a:hover{
+    color: rgb(114, 97, 0);
+}
 
 /*CLASES*/
 /*nav*/
@@ -307,11 +358,21 @@
 .logo :hover{
     transform: scale(1.02);
 }
-
 .logo img{
     border-radius: 90px;
     height: 270px;
     box-shadow: 2px 2px 5px white;
+}
+/*footer*/
+.pie_clases{
+    background-image: linear-gradient(to top, rgb(172, 160, 184) 0%, rgb(75, 61, 90) 100%);
+    margin-top: 0;
+}
+.redes_clases{
+    margin-top: 119px;
+}
+.redes_clases h2:hover, .redes_clases a:hover{
+    color: rgb(172, 160, 184);
 }
 
 
