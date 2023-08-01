@@ -90,17 +90,73 @@
     z-index: 1;
     justify-self: flex-end;
 }
+.bienvenida h1{
+    transition: all 0.2s;
+}
+.bienvenida h1:hover{
+    transform: scale(1.02);
+    color: red;
+}
 .bienvenida h2{
     font-size: 35px;
 }
 .introduccion{
+    width: 100%;
     padding: 10px;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 5px;
+}
+.introduccion div{
+    width: 80%;
+    padding: 5px;
+}
+.introduccion h2{
+    text-align: center;
+}
+.introduccion h3{
+    font-size: 35px;
+    padding: 0 10px;
 }
 .introduccion p{
     text-align: justify;
-    padding: 1rem 0;
+    padding: 1rem 10px;
+}
+.como_jugar{
+    width: 100%;
+    padding: 7px;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 45px;
+}
+.jugar_instrucciones{
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+    gap: 25px;
+    justify-content: center;
+    text-align: justify;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.instrucciones{
+    width: 33%;
+    border: 2px solid darkred;
+    padding: 10px 20px;
+    transition: all 0.2s;
+}
+.instrucciones:hover{
+    transform: scale(1.02);
+    background: rgba(139, 0, 0, 0.863) ;
+}
+.instrucciones h3{
+    text-align: center;
 }
 /*RAZAS*/
 
@@ -117,16 +173,22 @@
 }
 .cuerpo_razas{
    background-image: linear-gradient(to top, #1a1b12 0%, #3c3f40 100%);
+   display: flex;
+   flex-flow: column wrap;
+   gap: 8rem;
 } 
 .box_razas{
     width: 100%;
     padding-left: 10px;
     color: rgb(189, 180, 132);
-    border: 1px solid white;
+    display:flex;
+    gap: 2rem;
+    flex-flow: column wrap;
 }
 .box_razas h2{
     text-align: center;
     padding: 10px;
+    font-size: 35px;
 
 } 
 .info_razas{
@@ -147,6 +209,27 @@
 .info_parrafo p{
     margin-bottom: 20px;
 }
+.razas{
+    display: flex;
+    flex-wrap: wrap;
+    gap:5px;
+    justify-content: center;
+
+}
+.texto_razas{
+    width: 70%;
+    text-align: justify;
+    font-size: 25px;
+}
+.img_clases img{
+    transition: all 0.2s;
+}
+.img_clases img:hover{
+    transform: scale(1.1);
+}
+.img_humano{
+    width: 420px;
+}
 
 
 
@@ -164,6 +247,9 @@
 }
 .cuerpo_clases{
     background-image: linear-gradient(to top, rgb(75, 61, 90) 0%, #1e1f1a 100% );
+    display: flex;
+    flex-flow: column wrap;
+    gap: 5rem;
 }
 .info_clases h1{
     font-size: 45px;
@@ -173,6 +259,7 @@
     color: white;
     display: flex;
     flex-flow: column wrap;
+    gap: 2rem;
     color: rgb(172, 160, 184);
 }
 .box_clases h2{
@@ -207,9 +294,8 @@
 .imagen img:hover{
     transform: scale(1.02);
 }
-.texto{
-    width: 1000px;
-    height: 250px;
+.texto_clase{
+    width: 900px;
     font-size: 1.5rem;
     padding: 2rem;
     text-align: justify;
