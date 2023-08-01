@@ -1,0 +1,291 @@
+@import url('https://fonts.cdnfonts.com/css/im-fell-english-sc');
+/*font-family: 'IM FELL English SC', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@300;400;500&display=swap');
+/*font-family: 'Ysabeau Infant', sans-serif;*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+/*GENERAL*/
+/*headers*/
+.hero{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'IM FELL English SC', sans-serif;
+}
+/*navegador*/
+.contenedor_nav{
+    display: flex;
+    justify-content: center;
+}
+.contenedor_nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 50px;
+    padding: 10px;
+    font-size: 30px;
+
+}
+.contenedor_nav ul li{
+    transition: all 0.2s;
+    
+}
+.contenedor_nav li:hover{
+    transform: scale(1.2);
+}
+.contenedor_nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.contenedor_nav ul li .pag_actual{
+    transition: all 0.2s;
+}
+.contenedor_nav ul li .pag_actual:hover{
+    color: red;
+}
+.logodyd{
+    width: 100px;
+    background-color: black;
+    padding: 5px;
+}
+.banner {
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+    line-height:0;
+}
+/*main*/
+.cuerpo{
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+/*footer*/
+
+/*PAGS*/
+/*index*/
+.body_index{
+    background: black;
+}
+.nav_index ul{
+    background-color: black;
+}
+.nav_index ul li a{
+    color: darkred;
+}
+.bienvenida{
+    background-color: black;
+    color: darkred;
+    font-size: 45px;
+    text-align: center;
+    z-index: 1;
+    justify-self: flex-end;
+}
+.bienvenida h2{
+    font-size: 35px;
+}
+.introduccion{
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+}
+.introduccion p{
+    text-align: justify;
+    padding: 1rem 0;
+}
+/*RAZAS*/
+
+/*nav*/
+.nav_razas ul{
+    background-color: #000000;
+}
+.nav_razas ul li a{
+    color:rgb(114, 97, 0);
+}
+/*main*/
+.body_razas{
+    background: #3c3f40 ;
+}
+.cuerpo_razas{
+   background-image: linear-gradient(to top, #1a1b12 0%, #3c3f40 100%);
+} 
+.box_razas{
+    width: 100%;
+    padding-left: 10px;
+    color: rgb(189, 180, 132);
+    border: 1px solid white;
+}
+.box_razas h2{
+    text-align: center;
+    padding: 10px;
+
+} 
+.info_razas{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+}
+.info_razas h1{
+    font-size: 45px;
+    text-align: center;
+}
+.info_parrafo{
+    width: 90%;
+    align-self: center;
+    font-size: 25px;
+    padding: 15px;
+}
+.info_parrafo p{
+    margin-bottom: 20px;
+}
+
+
+
+/*CLASES*/
+/*nav*/
+.nav_clases ul, .nav_clases .logodyd{
+    background-color: #1e1f1a;
+}
+.nav_clases ul li a{
+    color: rgb(172, 160, 184);
+}
+/*main*/
+.body_clases{
+    background: #1e1f1a ;
+}
+.cuerpo_clases{
+    background-image: linear-gradient(to top, rgb(75, 61, 90) 0%, #1e1f1a 100% );
+}
+.info_clases h1{
+    font-size: 45px;
+    text-align: center;
+}
+.box_clases{
+    color: white;
+    display: flex;
+    flex-flow: column wrap;
+    color: rgb(172, 160, 184);
+}
+.box_clases h2{
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+    transition: all 0.2s;
+    text-decoration: underline;
+}
+.box_clases h2:hover{
+    transform: scale(1.2);
+}
+.clase{
+    display: flex;
+    justify-content: space-evenly;    
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;    
+    gap: 5px;
+}
+.imagen{
+    padding-left: 1rem;
+    height: 500px;
+    width: 300px;
+}
+.imagen img{
+    height: 100%;
+    width: 100%;
+    box-shadow: -4px 4px 5px black;
+    transition: all 0.2s;
+}
+.imagen img:hover{
+    transform: scale(1.02);
+}
+.texto{
+    width: 1000px;
+    height: 250px;
+    font-size: 1.5rem;
+    padding: 2rem;
+    text-align: justify;
+}
+.logo{
+    padding-right: 1.5rem;
+    transition: all 0.2s;
+}
+.logo :hover{
+    transform: scale(1.02);
+}
+
+.logo img{
+    border-radius: 90px;
+    height: 270px;
+    box-shadow: 2px 2px 5px white;
+}
+
+
+/*media queries*/
+@media (max-width:980px){
+    /*headers*/
+    .bienvenida{
+        font-size: 30px
+    }
+    /*navegador*/
+    .contenedor_nav ul{
+        gap: 15px;
+    }
+    .contenedor_nav ul li{
+        font-size: 20px;
+        padding-left: 5px;
+    }
+    .contenedor_nav ul li .pag_actual{
+        font-size: 25px;
+    }
+    .logodyd{
+        width: 50px;
+    }
+    
+    /*index*/
+    /*razas*/
+    /*clases*/
+}
+@media (max-width:730px){
+    /*headers*/
+    .bienvenida{
+        font-size: 25px
+    }
+    /*navegador*/
+    .contenedor_nav ul{
+        gap: 5px;
+    }
+    .contenedor_nav ul li{
+        font-size: 17px;
+    }
+    .contenedor_nav ul li .pag_actual{
+        font-size: 20px;
+    }
+
+
+}
+@media (max-width:600px){
+    .contenedor_nav ul{
+        flex-direction: row;
+        align-items: center;
+        gap: 2px;
+        padding-left: 2px;
+    }
+    .contenedor_nav ul li{
+        font-size: 1rem;
+    }
+    .contenedor_nav ul li .pag_actual{
+        font-size: 18px;
+    }
+    .logodyd{
+        width: 40px;
+    }
+}
