@@ -54,7 +54,7 @@
     color: red;
 }
 .logodyd{
-    width: 100px;
+    height: 7vh;
     background-color: black;
     padding: 5px;
 }
@@ -118,12 +118,12 @@
 .bienvenida{
     background-color: black;
     color: darkred;
-    font-size: 45px;
     text-align: center;
     z-index: 1;
     justify-self: flex-end;
 }
 .bienvenida h1{
+    font-size: 90px;
     transition: all 0.2s;
 }
 .bienvenida h1:hover{
@@ -131,7 +131,7 @@
     color: red;
 }
 .bienvenida h2{
-    font-size: 35px;
+    font-size: 40px;
 }
 .introduccion{
     width: 100%;
@@ -149,6 +149,7 @@
 }
 .introduccion h2{
     text-align: center;
+    font-size: 35px;
 }
 .introduccion h3{
     font-size: 35px;
@@ -171,7 +172,7 @@
 .jugar_instrucciones{
     width: 100%;
     display: flex;
-    font-size: 20px;
+    font-size: 25px;
     gap: 25px;
     justify-content: center;
     text-align: justify;
@@ -179,7 +180,7 @@
     flex-wrap: wrap;
 }
 .instrucciones{
-    width: 33%;
+    width: 40%;
     border: 2px solid darkred;
     padding: 10px 20px;
     transition: all 0.2s;
@@ -195,13 +196,10 @@
 .pie_index{
     background-image: linear-gradient(to top, darkred 0%, black 100%);
 }
-
 .redes_index h2:hover, .redes_index a:hover{
     color: darkred;
 }
-
 /*RAZAS*/
-
 /*nav*/
 .nav_razas ul{
     background-color: #000000;
@@ -217,26 +215,25 @@
    background-image: linear-gradient(to top, #1a1b12 0%, #3c3f40 100%);
    display: flex;
    flex-flow: column wrap;
-   gap: 8rem;
+   gap: 3rem;
 } 
 .box_razas{
     width: 100%;
-    padding-left: 10px;
     color: rgb(189, 180, 132);
     display:flex;
-    gap: 2rem;
+    gap: 1rem;
     flex-flow: column wrap;
 }
 .box_razas h2{
     text-align: center;
     padding: 10px;
     font-size: 35px;
-
 } 
 .info_razas{
     display: flex;
     flex-flow: column wrap;
     gap: 1rem;
+    text-align: justify;
 }
 .info_razas h1{
     font-size: 45px;
@@ -245,8 +242,8 @@
 .info_parrafo{
     width: 90%;
     align-self: center;
-    font-size: 25px;
     padding: 15px;
+    font-size: 25px;
 }
 .info_parrafo p{
     margin-bottom: 20px;
@@ -254,19 +251,19 @@
 .razas{
     display: flex;
     flex-wrap: wrap;
-    gap:5px;
+    gap: 5rem;
     justify-content: center;
-
 }
 .texto_razas{
-    width: 70%;
+    width: 100vh;
     text-align: justify;
     font-size: 25px;
+    padding: 1rem;
 }
-.img_clases img{
+.img_razas img{
     transition: all 0.2s;
 }
-.img_clases img:hover{
+.img_razas img:hover{
     transform: scale(1.1);
 }
 .img_humano{
@@ -280,10 +277,12 @@
 .redes_razas{
     margin-top: 119px;
 }
+.redes_razas h2, .redes_razas a{
+    color: rgb(189, 180, 132);
+}
 .redes_razas h2:hover, .redes_razas a:hover{
     color: rgb(114, 97, 0);
 }
-
 /*CLASES*/
 /*nav*/
 .nav_clases ul, .nav_clases .logodyd{
@@ -305,6 +304,13 @@
 .info_clases h1{
     font-size: 45px;
     text-align: center;
+}
+.info_parrafo_clases{
+    text-align: justify;
+    width: 90%;
+    align-self: center;
+    padding: 15px;
+    font-size: 25px;
 }
 .box_clases{
     color: white;
@@ -346,7 +352,7 @@
     transform: scale(1.02);
 }
 .texto_clase{
-    width: 900px;
+    width: 60vw;
     font-size: 1.5rem;
     padding: 2rem;
     text-align: justify;
@@ -360,7 +366,7 @@
 }
 .logo img{
     border-radius: 90px;
-    height: 270px;
+    height: 30vh;
     box-shadow: 2px 2px 5px white;
 }
 /*footer*/
@@ -377,62 +383,345 @@
 
 
 /*media queries*/
-@media (max-width:980px){
-    /*headers*/
-    .bienvenida{
-        font-size: 30px
+@media (max-width:1024px){
+    /*GENERAL*/
+    /*footer*/
+    .pie{
+        height: 70vh;
+        gap: 10rem;
     }
-    /*navegador*/
-    .contenedor_nav ul{
-        gap: 15px;
+    .redes{
+        margin-top: 2rem;
+        gap: 3rem;
     }
-    .contenedor_nav ul li{
+    .redes h2, .redes a{
+        font-size: 35px;
+    }
+    /*PAGS*/
+    /*index*/
+    .bienvenida h1{
+        font-size: 60px;
+    }
+    .bienvenida h2{
+        font-size: 28px;
+    }
+    .introduccion{
         font-size: 20px;
-        padding-left: 5px;
     }
-    .contenedor_nav ul li .pag_actual{
-        font-size: 25px;
+    .introduccion h2{
+        font-size: 26px;
     }
-    .logodyd{
-        width: 50px;
+    .introduccion h3{
+        font-size: 24px;
+    }
+    .como_jugar{
+        gap: 1rem;
+    }
+    .como_jugar h2{
+        font-size: 26px;
+    }
+    .instrucciones{
+        font-size: 20px;
+        width: 70%;
+    }
+    .instrucciones h3{
+        font-size: 24px;
+    }
+    /*razas*/
+    .cuerpo_razas{
+        gap: 2rem;
+    } 
+     .info_razas h1{
+        font-size: 30px;
+    }
+    .info_parrafo{
+        font-size: 20px;
+    }
+    .info_parrafo p{
+        margin-bottom: 10px;
+    }
+    .box_razas h2{
+        font-size: 28px;
+    } 
+    .texto_razas{
+        width: 80vh;
+        font-size: 20px;
+    }
+    /*clases*/
+    .cuerpo_clases{
+        gap: 2rem;
+    }
+    .info_clases h1{
+        font-size: 30px;
+    }
+    .info_parrafo_clases{
+        font-size: 20px;
+    }
+    .box_clases{
+        gap: 0rem;
     }
     
-    /*index*/
-    /*razas*/
-    /*clases*/
-}
-@media (max-width:730px){
-    /*headers*/
-    .bienvenida{
-        font-size: 25px
+    .box_clases h2{
+        font-size: 28px;
     }
-    /*navegador*/
-    .contenedor_nav ul{
-        gap: 5px;
+    .imagen{
+        height: 350px;
+        width: 200px;
     }
-    .contenedor_nav ul li{
-        font-size: 17px;
-    }
-    .contenedor_nav ul li .pag_actual{
+    .texto_clase{
+        width: 80vw;
         font-size: 20px;
     }
-
-
+    .logo img{
+        border-radius: 70px;
+        height: 25vh;
+        box-shadow: 2px 2px 5px white;
+        margin-left: 50px;
+    }
+    .pie_clases{
+        padding: 5rem 0;
+    }
 }
-@media (max-width:600px){
+@media (max-width:768px){
+    /*GENERAL*/
+    /*header*/
     .contenedor_nav ul{
-        flex-direction: row;
-        align-items: center;
-        gap: 2px;
-        padding-left: 2px;
+        gap: 40px;
+        font-size: 25px;
     }
-    .contenedor_nav ul li{
-        font-size: 1rem;
+    /*footer*/
+    .pie{
+        height: 50vh;
+        gap: 10rem;
     }
-    .contenedor_nav ul li .pag_actual{
+    .redes{
+        margin-top: 2rem;
+        gap: 2.5rem;
+    }
+    .redes h2, .redes a{
+        font-size: 30px;
+    }
+    /*PAGS*/
+    /*index*/
+    .bienvenida h1{
+        font-size: 50px;
+        padding: 0 1rem;
+    }
+    .bienvenida h2{
+        font-size: 26px;
+    }
+    .introduccion{
+        font-size: 18px;
+    }
+    .introduccion h2{
+        font-size: 22px;
+    }
+    .introduccion h3{
+        font-size: 20px;
+    }
+    .como_jugar{
+        gap: 0.7rem;
+    }
+    .como_jugar h2{
+        font-size: 22px;
+    }
+    .instrucciones{
+        font-size: 18px;
+        width: 90%;
+    }
+    .instrucciones h3{
+        font-size: 20px;
+    }
+    /*razas*/
+    .cuerpo_razas{
+        gap: 0rem;
+    } 
+     .info_razas h1{
+        font-size: 28px;
+    }
+    .info_parrafo{
+        font-size: 18px;
+    }
+    .info_parrafo p{
+        margin-bottom: 10px;
+    }
+    .box_razas h2{
+        font-size: 26px;
+    } 
+    .texto_razas{
+        width: 90vw;
+        font-size: 18px;
+    }
+    .img_razas img{
+        height: 55vh;
+    }
+    .img_humano img{
+        margin-left: 50px;
+
+    }
+    /*clases*/
+    .cuerpo_clases{
+        gap: 2rem;
+    }
+    .info_clases h1{
+        font-size: 28px;
+    }
+    .info_parrafo_clases{
+        font-size: 18px;
+    }
+    .box_clases{
+        gap: 0rem;
+    }
+    .box_clases h2{
+        font-size: 26px;
+    }
+    .imagen{
+        height: 300px;
+        width: 200px;
+    }
+    .texto_clase{
+        width: 100vw;
+        font-size: 18px;
+    }
+    .logo img{
+        border-radius: 50px;
+        height: 25vh;
+        box-shadow: 2px 2px 5px white;
+        margin-left: 50px;
+    }
+    .pie_clases{
+        padding: 5rem 0;
+    }
+}
+@media (max-width:480px){
+    /*GENERAL*/
+    /*header*/
+    .contenedor_nav ul{
+        gap: 10px;
         font-size: 18px;
     }
     .logodyd{
-        width: 40px;
+        height: 6vh;
+    }
+    /*footer*/
+    .pie{
+        height: 25vh;
+        gap: 2rem;
+        margin-top: 40px;
+    }
+    .redes{
+        margin: 1rem;
+        gap: 1.5rem;
+    }
+    .redes h2, .redes a{
+        font-size: 23px;
+    }
+    /*PAGS*/
+    /*index*/
+    .bienvenida h1{
+        font-size: 30px;
+        padding: 0 1rem;
+    }
+    .bienvenida h2{
+        font-size: 22px;
+    }
+    .introduccion{
+        font-size: 1rem;
+    }
+    .introduccion div{
+        width: 100%;
+        padding: 5px;
+    }
+    .introduccion h2{
+        font-size: 20px;
+    }
+    .introduccion h3{
+        font-size: 18px;
+    }
+    .como_jugar{
+        gap: 0.7rem;
+    }
+    .como_jugar h2{
+        font-size: 20px;
+    }
+    .instrucciones{
+        font-size: 1rem;
+        width: 100%;
+        padding: 2px;
+    }
+    .instrucciones h3{
+        font-size: 18px;
+    }
+    /*razas*/
+    .cuerpo_razas{
+        gap: 0rem;
+    } 
+    .box_razas{
+        gap: 5px;
+    }
+     .info_razas h1{
+        font-size: 23px;
+    }
+    .info_parrafo{
+        font-size: 1rem;
+    }
+    .info_parrafo p{
+        margin-bottom: 7px;
+    }
+    .box_razas h2{
+        font-size: 20px;
+    } 
+    .texto_razas{
+        width: 100%;
+        font-size: 1rem;
+        padding: 25px;
+    }
+    .img_razas img{
+        height: 40vh;
+    }
+    .img_humano{
+        width: 100%;
+    }
+    /*clases*/
+    .cuerpo_clases{
+        gap: 0.5em;
+    }
+    .info_clases h1{
+        font-size: 23px;
+    }
+    .info_parrafo_clases{
+        width: 100%;
+        font-size: 1rem;
+    }
+    .box_clases{
+        gap: 5px;
+    }
+    .box_clases h2{
+        font-size: 20px;
+    }
+    .imagen{
+        height: 270px;
+        width: 180px;
+    }
+    .texto_clase{
+        width: 100%;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    .logo img{
+        border-radius: 30px;
+        height: 15vh;
+        box-shadow: 2px 2px 5px white;
+        margin-left: 50px;
+    }
+    .pie_clases{
+        margin: 0;
+        height: 35vh;
     }
 }
+@media (max-width:320px){
+    .logodyd{
+        height: 5vh;
+    }
+}
+
