@@ -76,8 +76,8 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-center;
-    gap: 20rem;
+    justify-content: space-between;
+    gap: 15rem;
     align-items: center;
 }
 .redes{
